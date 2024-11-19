@@ -12,6 +12,7 @@ public class ChessBoard {
     }
 
     public void addPiece(Pawn pawn, int xCoordinate, int yCoordinate, PieceColor pieceColor) throws PawnException {
+        System.out.println("");
     	Boolean Status = isLegalBoardPosition(xCoordinate, yCoordinate);
     	if(Status) {
     		pawn.setXCoordinate(xCoordinate);
